@@ -34,7 +34,8 @@
           extend: {
             colors: {
               "primary-color": "#FF4240",
-              "para-color": "#707070",
+              "para-color": "#0D0D1299",
+              "dark-1": "#131318",
               "dark-2": "#424247",
             },
           },
@@ -48,6 +49,17 @@
       }
 
       /* <button class="btn bg-primary-color text-white border-0">Search</button> */
+
+      /* <div
+          class="space-y-6 text-center py-8 border-t-2 border-b-2 border-dashed border-para-color"
+        >
+          <h2 class="text-dark-1 text-4xl font-extrabold">Program Sections</h2>
+          <p class="text-para-color font-medium">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat <br />
+            dolor. Purus urna in sit nullam proin.
+          </p>
+        </div> */
     </style>
   </head>
   <body class="font-manrope">
@@ -159,7 +171,96 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <!-- program section -->
+      <section class="container mx-auto m-24 px-3 lg:px-24">
+        <div
+          class="space-y-2 lg:space-y-6 text-center mb-12 py-8 border-t-2 border-b-2 border-dashed border-para-color"
+        >
+          <h2 class="text-dark-1 text-2xl lg:text-4xl font-extrabold">
+            Program Sections
+          </h2>
+          <p class="text-para-color font-medium">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat <br class="hidden lg:block" />
+            dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <!-- first card -->
+          <div class="relative bg-dark-1 rounded-2xl h-56 lg:h-auto">
+            <img
+              class="opacity-60 h-full w-full rounded-2xl"
+              src="/Images/2.png"
+              alt=""
+            />
+            <div
+              class="space-y-3 xl:space-y-6 absolute top-[5%] xl:top-1/4 left-5 xl:left-10 right-3"
+            >
+              <h3 class="text-xl lg:text-3xl font-extrabold text-white">
+                Junior Program
+              </h3>
+              <p class="text-sm lg:text-base text-white">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                elit enim sagittis turpis in magna. Id et sed euismod natoque
+                amet nunc morbi nulla. Tortor congue sed et in.
+              </p>
+              <button class="btn bg-primary-color text-white border-0">
+                Register Now!
+              </button>
+            </div>
+          </div>
+          <!-- second card -->
+          <div class="relative bg-dark-1 rounded-2xl h-56 lg:h-auto">
+            <img
+              class="opacity-60 h-full w-full rounded-2xl"
+              src="/Images/3.png"
+              alt=""
+            />
+            <div
+              class="space-y-3 xl:space-y-6 absolute top-[5%] xl:top-1/4 left-5 xl:left-10 right-3"
+            >
+              <h3 class="text-xl lg:text-3xl font-extrabold text-white">
+                Junior Program
+              </h3>
+              <p class="text-sm lg:text-base text-white">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                elit enim sagittis turpis in magna. Id et sed euismod natoque
+                amet nunc morbi nulla. Tortor congue sed et in.
+              </p>
+              <button class="btn bg-primary-color text-white border-0">
+                Register Now!
+              </button>
+            </div>
+          </div>
+          <!-- third card -->
+          <div
+            class="relative bg-dark-1 rounded-2xl lg:col-span-2 h-56 lg:h-auto"
+          >
+            <img
+              class="opacity-60 h-full rounded-2xl"
+              src="/Images/4.png"
+              alt=""
+            />
+            <div
+              class="space-y-3 lg:space-y-6 absolute top-[5%] lg:top-1/4 xl:top-[40%] left-5 xl:left-10 right-3"
+            >
+              <h3 class="text-xl lg:text-3xl font-extrabold text-white">
+                Junior Program
+              </h3>
+              <p class="text-sm lg:text-base text-white lg:w-[540px]">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                elit enim sagittis turpis in magna. Id et sed euismod natoque
+                amet nunc morbi nulla. Tortor congue sed et in.
+              </p>
+              <button class="btn bg-primary-color text-white border-0">
+                Register Now!
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
