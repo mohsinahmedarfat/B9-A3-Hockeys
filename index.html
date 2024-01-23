@@ -35,7 +35,6 @@
             colors: {
               "primary-color": "#FF4240",
               "para-color": "#0D0D1299",
-              // #13131863
               "dark-1": "#131318",
               "dark-2": "#424247",
             },
@@ -48,8 +47,6 @@
       .font-manrope {
         font-family: "Manrope", sans-serif;
       }
-
-      /* <button class="btn bg-primary-color text-white border-0">Search</button> */
     </style>
   </head>
   <body class="font-manrope">
@@ -134,7 +131,24 @@
         <div class="carousel w-full">
           <!-- slide-1 -->
           <div id="slide1" class="carousel-item relative w-full">
-            <img src="./Images/banner-1.png" class="w-full rounded-2xl" />
+            <div class="relative">
+              <img src="./Images/banner-1.png" class="w-full rounded-2xl" />
+              <!-- black box -->
+              <div
+                class="hidden lg:block absolute lg:right-5 xl:right-8 lg:bottom-5 xl:bottom-8 lg:p-5 xl:p-8 bg-dark-1 rounded-2xl"
+              >
+                <h3
+                  class="text-white lg:text-xl xl:text-2xl font-extrabold mb-4"
+                >
+                  Meet all the heroes from the field
+                </h3>
+                <p class="text-[#FFFFFF99] font-medium lg:text-lg xl:text-base">
+                  Dit amet consectetur. Condimentum dignissim adipiscing
+                  <br class="hidden lg:block" />
+                  aliquam turpis placerat dolor. Purus urna in sit nullam proin.
+                </p>
+              </div>
+            </div>
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
@@ -148,23 +162,32 @@
                 class="btn btn-circle bg-black text-white border-0"
                 >❯</a
               >
-            </div>
-
-            <!-- black box -->
-            <div class="bg-dark-1 p-8">
-              <h3 class="text-white text-2xl font-extrabold">
-                Meet all the heroes from the field
-              </h3>
-              <p class="text-[#FFFFFF99] font-medium">
-                Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-                turpis placerat dolor. Purus urna in sit nullam proin.
-              </p>
             </div>
           </div>
 
           <!-- slide-2 -->
           <div id="slide2" class="carousel-item relative w-full">
-            <img src="./Images/banner-2.jpg" class="w-full rounded-2xl" />
+            <div class="relative">
+              <img
+                src="./Images/banner-2.jpg"
+                class="lg:h-[391px] xl:h-[511px] lg:w-[832px] xl:w-[1088px] rounded-2xl"
+              />
+              <!-- black box -->
+              <div
+                class="hidden lg:block absolute lg:right-5 xl:right-8 lg:bottom-5 xl:bottom-8 lg:p-5 xl:p-8 bg-dark-1 rounded-2xl"
+              >
+                <h3
+                  class="text-white lg:text-xl xl:text-2xl font-extrabold mb-4"
+                >
+                  Meet all the heroes from the field
+                </h3>
+                <p class="text-[#FFFFFF99] font-medium lg:text-lg xl:text-base">
+                  Dit amet consectetur. Condimentum dignissim adipiscing
+                  <br class="hidden lg:block" />
+                  aliquam turpis placerat dolor. Purus urna in sit nullam proin.
+                </p>
+              </div>
+            </div>
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
@@ -180,6 +203,16 @@
               >
             </div>
           </div>
+        </div>
+        <!-- black box -->
+        <div class="lg:hidden p-4 bg-dark-1 rounded-2xl">
+          <h3 class="text-white text-base font-extrabold mb-3">
+            Meet all the heroes from the field
+          </h3>
+          <p class="text-[#FFFFFF99] font-medium text-xs">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
         </div>
       </div>
     </header>
